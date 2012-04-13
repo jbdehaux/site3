@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>
+            Mayflower Code Browser - Source Code
+        </title>
+        <link rel="stylesheet" type="text/css" href="js/jquery.sidebar/css/codebrowser/sidebar.css" />
+        <link rel="stylesheet" type="text/css" href="css/global.css" />
+        <link rel="stylesheet" type="text/css" href="css/cruisecontrol.css" />
+        <link rel="stylesheet" type="text/css" href="css/review.css" />
+
+        <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+        <script type="text/javascript" src="js/jquery.sidebar/jquery-ui-1.7.2.custom.min.js"></script>
+        <script type="text/javascript" src="js/jquery.sidebar/jquery.sidebar.js"></script>
+        <script type="text/javascript" src="js/jquery.cluetip/lib/jquery.hoverIntent.js"></script>
+        <script type="text/javascript" src="js/jquery.cluetip/lib/jquery.bgiframe.min.js"></script>
+        <script type="text/javascript" src="js/jquery.cluetip/jquery.cluetip.min.js"></script>
+
+        <script type="text/javascript" src="js/review.js"></script>
+    </head>
+    <body class="codebrowser">
+        <div class="header">
+            <a href="./index.html">Go back to index</a> |
+            <a href="http://github.com/mayflowergmbh/PHP_CodeBrowser">PHP CodeBrowser</a>
+        </div>
+        <hr/>
+        <div id="review">
+            <div class="filepath">
+                js/plugins.js            </div>
+
+            <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><div class="code"><ol class="code"><li id="line_1" class="odd"><span class="lineNumber">&nbsp;1&nbsp;</span>//&nbsp;usage:&nbsp;log('inside&nbsp;coolFunc',&nbsp;this,&nbsp;arguments);<a name="line_1"></a></li>
+<li id="line_2" class="even"><span class="lineNumber">&nbsp;2&nbsp;</span>//&nbsp;paulirish.com/2009/log-a-lightweight-wrapper-for-consolelog/<a name="line_2"></a></li>
+<li id="line_3" class="odd"><span class="lineNumber">&nbsp;3&nbsp;</span>window.log&nbsp;=&nbsp;function&nbsp;f(){&nbsp;log.history&nbsp;=&nbsp;log.history&nbsp;||&nbsp;[];&nbsp;log.history.push(arguments);&nbsp;if(this.console)&nbsp;{&nbsp;var&nbsp;args&nbsp;=&nbsp;arguments,&nbsp;newarr;&nbsp;args.callee&nbsp;=&nbsp;args.callee.caller;&nbsp;newarr&nbsp;=&nbsp;[].slice.call(args);&nbsp;if&nbsp;(typeof&nbsp;console.log&nbsp;===&nbsp;'object')&nbsp;log.apply.call(console.log,&nbsp;console,&nbsp;newarr);&nbsp;else&nbsp;console.log.apply(console,&nbsp;newarr);}};<a name="line_3"></a></li>
+<li id="line_4" class="even"><span class="lineNumber">&nbsp;4&nbsp;</span><a name="line_4"></a></li>
+<li id="line_5" class="odd"><span class="lineNumber">&nbsp;5&nbsp;</span>//&nbsp;make&nbsp;it&nbsp;safe&nbsp;to&nbsp;use&nbsp;console.log&nbsp;always<a name="line_5"></a></li>
+<li id="line_6" class="even"><span class="lineNumber">&nbsp;6&nbsp;</span>(function(a){function&nbsp;b(){}for(var&nbsp;c="assert,count,debug,dir,dirxml,error,exception,group,groupCollapsed,groupEnd,info,log,markTimeline,profile,profileEnd,time,timeEnd,trace,warn".split(","),d;!!(d=c.pop());){a[d]=a[d]||b;}})<a name="line_6"></a></li>
+<li id="line_7" class="odd"><span class="lineNumber">&nbsp;7&nbsp;</span>(function(){try{console.log();return&nbsp;window.console;}catch(a){return&nbsp;(window.console={});}}());<a name="line_7"></a></li>
+<li id="line_8" class="even"><span class="lineNumber">&nbsp;8&nbsp;</span><a name="line_8"></a></li>
+<li id="line_9" class="odd"><span class="lineNumber">&nbsp;9&nbsp;</span><a name="line_9"></a></li>
+<li id="line_10" class="even"><span class="lineNumber">10&nbsp;</span>//&nbsp;place&nbsp;any&nbsp;jQuery/helper&nbsp;plugins&nbsp;in&nbsp;here,&nbsp;instead&nbsp;of&nbsp;separate,&nbsp;slower&nbsp;script&nbsp;files.<a name="line_10"></a></li></ol></div></body></html>
+                    </div>
+    </body>
+</html>
